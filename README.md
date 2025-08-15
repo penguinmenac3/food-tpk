@@ -7,6 +7,7 @@
   <a href="#usage"><img src="https://img.shields.io/badge/CLI-Available-orange.svg" alt="CLI"></a>
  </p>
  <p>Get the weekly menu from Joel's Cantina at TPK, powered by AI & Vision! 🥗🤖</p>
+ <img src='image.png' />
 </div>
 
 ## 🚀 Setup
