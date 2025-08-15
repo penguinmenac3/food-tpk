@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "food-tpk"
+version = "0.1.0"
+description = "Get today's food from Karlsruhe's Joels Cantina via CLI or MCP."
+authors = [
+    { name="Michael Fürst", email="mail@michaelfuerst.de" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "dotenv",
+    # Add any AI/ML or image processing dependencies you use, e.g.:
+    "openai",
+    "pillow",
+    "opencv-python",
+    "fastmcp"
+]
+
+[project.scripts]
+food-tpk = "food_tpk.cli:main"
+food-tpk-mcp = "food_tpk.mcp:main"
