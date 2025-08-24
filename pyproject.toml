@@ -20,7 +20,8 @@ dependencies = [
     "openai",
     "pillow",
     "opencv-python",
-    "fastmcp"
+    "fastmcp",
+    "pip-system-certs",
 ]
 
 [project.scripts]
