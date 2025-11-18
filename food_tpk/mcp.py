@@ -1,4 +1,3 @@
-import sys
 from fastmcp import FastMCP
 from .food_tpk import get_food
 
@@ -13,13 +12,7 @@ def get_food_mcp() -> str:
     return get_food()
 
 def main():
-    mode = "stdio"
-    if len(sys.argv) == 2:
-        mode = sys.argv[1]
-    if mode == "http":
-        mcp.run(transport="http", host="127.0.0.1", port=13374)
-    else:
-        mcp.run(transport="stdio")
+    mcp.run(transport="http", host="127.0.0.1", port=13374)
 
 if __name__ == "__main__":
     main()
